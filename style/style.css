@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #00BFFF, #87CEFA);
+}
+.main-container{
+    width: 30%;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.bgimg{
+    width: 100%;
+    background: url(../images/weather.jpg),rgba(0,0,0,0.5) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 30px 0px;
+}
+.input-container input{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+
+}
+.input-container button{
+    padding: 10.5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -8px;
+    cursor: pointer;
+}
+.content img{
+    width: 140px;
+    margin: 20px 0px;
+}
+.name-temp{
+    margin: 0px 0px 30px 0px;
+}
+.name-temp h1:first-child{
+    color: #00ffff;
+    font-size: 3.5rem;
+}
+.name-temp h1:last-child{
+    color: #00ffff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #00ffff;
+    margin: 30px 0px;
+}
+.footer1 img{
+    width: 40px;
+    margin: 0px 5px;
+}
+.footer1 .humidity p{
+    font-size: 1.1rem;
+}
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #00ffff;
+    margin: 30px 0px;
+}
+.footer2 img{
+    width: 40px;
+    margin: 0px 5px;
+}
+.footer2 .wind-container p{
+    font-size: 1.1rem;
+}
+
+
+@media (max-width:1100){
+    .main-container{
+        width: 40%;
+    }
+}
+@media (max-width:900px){
+    .main-container{
+        width: 50%;
+    }
+}
+@media (max-width:700px){
+    .main-container{
+        width: 65%;
+    }
+}
